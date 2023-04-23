@@ -16,7 +16,13 @@ st.write('You selected:', title)
 index = book_df.index[book_df['book_name']==title]
 print()
 book_list = book_df.iloc[index,1:10].values.tolist()[0]
-new_list = [(x.split('-')[0],x.split('-')[1]) for x in book_list ]
+#new_list = [(x.split('-')[0],x.split('-')[1]) for x in book_list ]
+new_list = []
+for x in book_list:
+    try:
+      new_list.append((x.split('-')[0],float(x.split('-')[1])))
+    except:
+        continue
 print(new_list)
 if st.button('Get recommendations'):
     df = pd.DataFrame(
