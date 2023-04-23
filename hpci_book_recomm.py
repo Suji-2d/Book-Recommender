@@ -15,7 +15,7 @@ st.write('You selected:', title)
 
 index = book_df.index[book_df['book_name']==title]
 print()
-book_list = book_df.iloc[index,1:10].values.tolist()[0]
+book_list = book_df.iloc[index,1:11].values.tolist()[0]
 #new_list = [(x.split('-')[0],x.split('-')[1]) for x in book_list ]
 new_list = []
 for x in book_list:
