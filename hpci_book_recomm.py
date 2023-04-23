@@ -20,7 +20,7 @@ book_list = book_df.iloc[index,1:10].values.tolist()[0]
 new_list = []
 for x in book_list:
     try:
-      new_list.append((x.split('-')[0],float(x.split('-')[1])))
+      new_list.append((x.split('-')[0],round(float(x.split('-')[1]),2)))
     except:
         continue
 print(new_list)
