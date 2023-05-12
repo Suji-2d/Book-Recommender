@@ -9,6 +9,8 @@ The project created a recommendation matrix, book_index.csv, which contains the 
 ### User-Based Collaborative Filtering:
 The recommendation matrix employed a user-based collaborative filtering technique. This technique relies on finding similarities between users based on their book preferences and then recommending books that are liked by users with similar preferences. By analyzing user behavior and identifying patterns of similarity, the system provides personalized recommendations, enhancing the user experience.
 
+![alt text](http://url/to/img.png)
+
 ### Streamlit User Interface:
 Streamlit, a Python library for building interactive web applications, was utilized to develop a user-friendly and intuitive UI for the book recommendation system. The UI provides a seamless and engaging experience for users to input their preferences and receive personalized book recommendations based on the recommendation matrix.
 
